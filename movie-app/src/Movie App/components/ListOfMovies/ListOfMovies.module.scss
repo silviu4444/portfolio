@@ -1,0 +1,231 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    margin: 10px 20px;
+    border: 2px solid transparent;
+    padding: 10px;
+    transition: transform .1s;
+    border-radius: 5px;
+    order: 4;
+    background: rgb(6, 77, 143);
+    .spanContainer {
+      width: 100px;
+    }
+    img {
+      order: 1;
+      width: 50px;
+  
+      height: 90px;
+    }
+    p {
+      order: 2;
+      color: white;
+      font-size: 18px;
+      margin: 10px 0 0 0;
+      max-width: 200px;
+    }
+  }
+  .item:hover {
+    background-color: #28a745;
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px;
+    width: 200px;
+    height: 250px;
+    border: 2px solid transparent;
+    transition: transform 0.1s;
+    border-radius: 5px;
+    background: rgb(6, 77, 143);
+    .imageContainer {
+      max-width: 100px;
+      max-height: 150px;
+      overflow: hidden;
+    }
+    img {
+      width: 80px;
+
+      height: 120px;
+    }
+    p {
+      color: white;
+      font-size: 18px;
+      margin: 10px 0 0 0;
+    }
+  }
+  .item:hover {
+    background-color: #28a745;
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px;
+    width: 250px;
+    height: 300px;
+    border: 2px solid transparent;
+    transition: transform 0.1s;
+    border-radius: 5px;
+    background: rgb(6, 77, 143);
+    .imageContainer {
+      max-width: 150px;
+      max-height: 200px;
+      overflow: hidden;
+    }
+    img {
+      width: 150px;
+
+      height: 200px;
+    }
+    p {
+      color: white;
+      font-size: 18px;
+      margin: 10px 0 0 0;
+    }
+  }
+  .item:hover {
+    background-color: #28a745;
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px;
+    width: 250px;
+    height: 300px;
+    border: 2px solid transparent;
+    transition: transform 0.1s;
+    border-radius: 5px;
+    background: rgb(6, 77, 143);
+    .imageContainer {
+      max-width: 150px;
+      max-height: 200px;
+      overflow: hidden;
+    }
+    img {
+      width: 150px;
+
+      height: 200px;
+    }
+    p {
+      color: white;
+      font-size: 18px;
+      margin: 10px 0 0 0;
+    }
+  }
+  .item:hover {
+    background-color: #28a745;
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px;
+    width: 250px;
+    height: 300px;
+    border: 2px solid transparent;
+    transition: transform 0.1s;
+    border-radius: 5px;
+    background: rgb(6, 77, 143);
+    .imageContainer {
+      max-width: 150px;
+      max-height: 200px;
+      overflow: hidden;
+    }
+    img {
+      width: 150px;
+
+      height: 200px;
+    }
+    p {
+      color: white;
+      font-size: 18px;
+      margin: 10px 0 0 0;
+    }
+  }
+  .item:hover {
+    background-color: #28a745;
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+}

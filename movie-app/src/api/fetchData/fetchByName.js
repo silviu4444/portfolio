@@ -1,5 +1,5 @@
 import axios from "axios";
-const fetchByName = async (searchTerm, setStateName, setLoaderStatus) => {
+const fetchByName = async (searchTerm, setStateName, setLoaderStatus, setSugestedMovies) => {
   setLoaderStatus(true);
   const response = await axios.get("http://www.omdbapi.com/", {
     params: {
@@ -10,10 +10,13 @@ const fetchByName = async (searchTerm, setStateName, setLoaderStatus) => {
   if (response.data.Error) {
     setStateName([]);
     setLoaderStatus(false);
+    setSugestedMovies(false)
     return;
   }
   setStateName(response.data.Search);
+  console.log(response.data.Search)
   setLoaderStatus(false);
+  setSugestedMovies(false);
 };
 
 export default fetchByName;

@@ -7,6 +7,7 @@ const ListOfMovies = ({
   movies,
   setMovieStateOnParent,
   setMovieIdOnParent,
+  sugestedMovies
 }) => {
   const useOutsideAlerter = (ref) => {
     useEffect(() => {
@@ -32,6 +33,7 @@ const ListOfMovies = ({
 
   return (
     <>
+    {sugestedMovies ? <h2 className={styles.sugestedMovies}>Sugested Movies</h2> : ""}
       <div className={styles.items} ref={wrapperRef}>
         {movies.map((el) => {
           return (

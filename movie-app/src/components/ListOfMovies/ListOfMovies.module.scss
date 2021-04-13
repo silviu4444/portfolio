@@ -1,4 +1,8 @@
 // Extra small devices (portrait phones, less than 576px)
+.sugestedMovies {
+  color: white;
+  margin-top: 15px;
+}
 @media (max-width: 575.98px) {
   .items {
     display: flex;

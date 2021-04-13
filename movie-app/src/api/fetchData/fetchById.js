@@ -1,5 +1,5 @@
 import axios from "axios";
-const fetchById = async (id, setState, setLoaderStatus) => {
+const fetchById = async (id, setState, setLoaderStatus, setMoviesData, setSugestedMovies) => {
   if (!id) return;
   setLoaderStatus(true);
 
@@ -13,10 +13,13 @@ const fetchById = async (id, setState, setLoaderStatus) => {
   if (response.data.Error) {
     setState([]);
     setLoaderStatus(false);
+    setSugestedMovies(false)
     return;
   }
+  setMoviesData([])
   setState([response.data]);
   setLoaderStatus(false);
+  setSugestedMovies(false)
   console.log(response.data)
   const input = document.querySelector("input");
   input.value = response.data.Title

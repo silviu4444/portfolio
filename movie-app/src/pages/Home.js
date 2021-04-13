@@ -50,37 +50,19 @@ const Home = () => {
       return;
     } else {
       setMovieDataById([]);
-      fetchByName(movie, setMoviesOnParent, setLoaderStatus, setSugestedMovies);
+      fetchByName(movie, setMoviesData, setLoaderStatus, setSugestedMovies);
     }
   }, [movie]);
 
   useEffect(() => {
     fetchById(
       movieId,
-      setMovieDataByIdOnParent,
+      setMovieDataById,
       setLoaderStatus,
       setMoviesData,
       setSugestedMovies
     );
   }, [movieId]);
-
-  // functions for setting state on fetchingData
-  const setMovieDataByIdOnParent = (data) => {
-    setMovieDataById(data);
-  };
-  const setMoviesOnParent = (data) => {
-    setMoviesData(data);
-  };
-
-  // functions for setting state on components
-  const setMovieStateOnParent = (name) => {
-    setMovie(name.trim());
-  };
-
-  const setMovieIdOnParent = (id) => {
-    setMovieId(id);
-  };
-  //
 
   // Input implementation
   const [searchInput, setSearchInput] = useState("");
@@ -103,6 +85,13 @@ const Home = () => {
     setSearchInput(value);
   };
 
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setMovie(searchInput.trim());
+    }, 1000);
+    return () => clearTimeout(timeoutId);
+  }, [searchInput]); // eslint-disable-line react-hooks/exhaustive-deps
+
   // loader useEffect
 
   useEffect(() => {
@@ -112,13 +101,6 @@ const Home = () => {
     }
     inputRef.current.classList.remove(`${styles.isLoading}`);
   }, [loaderStatus]);
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setMovie(searchInput.trim());
-    }, 1000);
-    return () => clearTimeout(timeoutId);
-  }, [searchInput]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>
@@ -160,8 +142,8 @@ const Home = () => {
         />
         <ListOfMovies
           movies={moviesData}
-          setMovieStateOnParent={setMovieStateOnParent}
-          setMovieIdOnParent={setMovieIdOnParent}
+          setMovieStateOnParent={setMovie}
+          setMovieIdOnParent={setMovieId}
           loaderStatus={loaderStatus}
           sugestedMovies={sugestedMovies}
         />

@@ -17,6 +17,7 @@ const fetchByName = async (searchTerm, setStateName, setLoaderStatus, setSugeste
   console.log(response.data.Search)
   setLoaderStatus(false);
   setSugestedMovies(false);
+  return;
 };
 
 export default fetchByName;

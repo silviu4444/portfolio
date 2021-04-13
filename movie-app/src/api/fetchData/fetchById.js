@@ -23,6 +23,7 @@ const fetchById = async (id, setState, setLoaderStatus, setMoviesData, setSugest
   console.log(response.data)
   const input = document.querySelector("input");
   input.value = response.data.Title
+  return;
 };
 
 export default fetchById;

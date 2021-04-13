@@ -1,0 +1,355 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.d-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.d-none {
+    display: none;
+}
+.d-block {
+    display: block;
+}
+d-inline-block {
+    display: inline-block
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-content-center {
+    align-items: center;
+}
+.justify-self-center {
+    justify-self: center;
+}
+.align-self-center {
+    align-self: center;
+}
+.justify-content-space-between {
+    justify-content: space-between;
+}
+.justify-content-space-around {
+    justify-content: space-around;
+}
+header {
+    background-color: #c54b3c;
+    height: auto;
+}
+.icon-header img {
+    width: 100px;
+}
+
+.download img {
+    width: 130px;
+}
+#section-1 h3 {
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+#section-1 h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+}
+#section-1 p {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+#section-1 .social-media-contact {
+    color: white;
+    align-self: center;
+    margin: 13px 0;
+}
+.social-media-contact i {
+    padding: 0px 10px;
+}
+#section-1 h2 {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+}
+#section-1 .download {
+    justify-content: center;
+    margin: 40px 0;
+}
+
+
+main {
+    background-color: white;
+    height: auto;
+}
+#section-3 {
+    background-color: white;
+    height: auto;
+}
+.mobile-resize {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* CONTENT 1 */
+.content-1 {
+    margin-top: 50px;
+}
+.icon-content-1 {
+    font-size: 20px;
+    color: white;
+}
+.icon-content-1 i {
+    border: 1px solid #c54b3c;
+    padding: 15px;
+    background-color: #c54b3c;
+}
+.content-1 h1 {
+    text-align: center;
+    font-size: 35px;
+}
+.content-1 h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin: 0;
+}
+.content-1 p {
+    text-align: center;
+    font-size: 15px;
+}
+
+/* CONTENT 2 */
+.content-2 {
+    margin-top: 50px;
+}
+.icon-content-2 {
+    font-size: 20px;
+    color: white;
+}
+.icon-content-2 i {
+    border: 1px solid #c54b3c;
+    padding: 15px;
+    background-color: #c54b3c;
+}
+.content-2 h1 {
+    text-align: center;
+    font-size: 35px;
+}
+.content-2 h2 {
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+    margin: 0;
+}
+.content-2 p {
+    text-align: center;
+    font-size: 15px;
+}
+/* CONTENT 3 */
+.content-3 {
+    margin-top: 50px;
+    justify-content: center;
+}
+.icon-content-3 {
+    font-size: 20px;
+    color: white;
+}
+.icon-content-3 i {
+    border: 1px solid #c54b3c;
+    padding: 15px;
+    background-color: #c54b3c;
+}
+.content-3 h1 {
+    text-align: center;
+    font-size: 35px;
+}
+.content-3 h2 {
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+    margin: 0;
+}
+.content-3 p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+/* CONTENT 4 */
+.content-4 {
+    background-color: #c54b3c;
+}
+.content-4 h1 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 30px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* CONTENT 5 */
+.content-5 {
+    background-color: #393b47;
+}
+.content-5 h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 0 30px;
+}
+.icon-content-5 {
+    font-size: 20px;
+    color: white;
+    align-self: center;
+}
+.icon-content-5 i {
+    border: 1px solid #c54b3c;
+    padding: 15px;
+    margin-top: 18px;
+    background-color: #c54b3c;
+}
+.content-5 h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 0 30px;
+}
+.content-5 p {
+    color: white;
+    padding: 0 30px;
+}
+.iphone-cute-1 {
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: -4px;
+}
+.iphone-cute-1 img {
+    width: 250px;
+}
+
+/* CONTENT 6 */
+.content-6 {
+    background-color: #2b2e37
+}
+.content-6-right-side {
+    order: 1;
+}
+.content-6-left-side {
+    order: 2;
+}
+.icon-content-6 {
+    font-size: 20px;
+    color: white;
+}
+.icon-content-6 i {
+    border: 1px solid #c54b3c;
+    padding: 15px;
+    margin-top: 50px;
+    background-color: #c54b3c;
+}
+.content-6 h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 0 30px;
+}
+.content-6 p {
+    color: white;
+    padding: 0 30px;
+}
+.iphone-cute-6 {
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: -4px;
+}
+.iphone-cute-6 img {
+    width: 250px;
+}
+/* CONTENT 7 */
+.content-7 {
+    background-color: #393b47;
+}
+.icon-content-7 {
+    font-size: 20px;
+    color: white;
+    align-self: center;
+}
+.icon-content-7 i {
+    border: 1px solid #c54b3c;
+    padding: 15px;
+    margin-top: 50px;
+    background-color: #c54b3c;
+}
+.content-7 h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 0 30px;
+}
+.content-7 p {
+    color: white;
+    padding: 0 30px;
+}
+.iphone-cute-7 {
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: -4px;
+}
+.iphone-cute-7 img {
+    width: 250px;
+}
+
+/* SECTION 4 */
+#section-4 {
+    background-color: #c44b3d;
+    height: auto;
+}
+#section-4 h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 0 30px;
+}
+#section-4 form {
+    align-self: center;
+}
+#section-4 label {
+    color: white;
+    display: block;
+}
+#section-4 input[type="text"], textarea {
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+#section-4 button {
+    display: block;
+    color: white;
+    padding: 10px;
+    background-color: #a83b2f;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: white;
+}
+footer h3 {
+    color: #c44b3d;
+    text-align: center;
+    padding: 20px;
+}

@@ -1,0 +1,203 @@
+@media (max-width: 360px) {
+    #section-1 h1 {
+        font-size: 40px;
+    }
+    #section-1 h3 {
+        font-size: 15px;
+    }
+    #section-1 h2 {
+        font-size: 17px;
+    }
+    .icon-header img {
+        width: 80px;
+    }
+    .download img {
+        width: 100px;
+    }
+    #section-4 input{
+        width: 200px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 575.98px) {
+    
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+    #section-1 p {
+        display: none;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    #section-1 h1 {
+        font-size: 70px;
+    }
+    #section-1 h3 {
+        font-size: 20px;
+    }
+    #section-1 h2 {
+        font-size: 17px;
+    }
+    .icon-header img {
+        width: 100px;
+    }
+    #section-4 input{
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    #section-1 p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .d-block-lg {
+        display: block;
+    }
+    .d-none-lg {
+        display: none;
+    }
+    .download img {
+        width: 150px;
+        padding: 10px;
+    }
+    .tablet-resize {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content-4 h1 {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        font-size: 35px;
+    }
+    #section-4 input[type="text"], textarea{
+        width: 700px;
+        margin-bottom: 10px;
+        padding: 10px 0;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .tablet-resize {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    header {
+        background: url(../images/town-road.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 90vh;
+    }
+    #section-1 h1 {
+        font-size: 80px;
+    }
+    #section-1 h3 {
+        font-size: 25px;
+    }
+    #section-1 h2 {
+        font-size: 20px;
+    }
+    .icon-header img {
+        width: 120px;
+    }
+    .download img {
+        width: 175px;
+        padding: 10px;
+    }
+    .d-flex-lg-row {
+        display: flex;
+        flex-direction: row;
+    }
+    .d-flex-lg-column {
+        display: flex;
+        flex-direction: column;
+    }
+    .px-lg {
+        padding: 0 120px;
+    }
+    .py-lg {
+        padding: 30px 0;
+    }
+    .my-lg {
+        margin: 8px 0;
+    }
+    .mx-lg {
+        margin: 0 8px;
+    }
+    .text-align-start {
+        text-align: start !important;
+    }
+    .text-align-center {
+        text-align: center !important;
+    }
+    .d-block-lg {
+        display: block;
+    }
+    .d-none-lg {
+        display: none;
+    }
+
+    .row-1 {
+        width: 45%;
+        justify-self: flex-end;
+    }
+    .width-lg-70 {
+        width: 70%;
+    }
+    .row-2 {
+        width: 30%;
+    }
+    #section-1 p {
+        text-align: left;
+    }
+    #section-1 h2 {;
+        text-align: left;
+    }
+    #section-1 .download {
+        justify-content: flex-start;
+    }
+    .content-5-left-side {
+        width: 600px;
+    }
+    .icon-content-5 i {
+        margin-top: 0;
+    }
+    .content-6-right-side {
+        width: 600px;
+    }
+    .content-6-left-side {
+        width: 600px;
+    }
+    .content-6-right-side {
+        order: 2;
+    }
+    .content-6-left-side {
+        order: 1;
+    }
+    .icon-content-6 i {
+        margin-top: 0;
+    }
+    .content-7-left-side {
+        width: 600px;
+    }
+    .icon-content-7 i {
+        margin-top: 0;
+    }
+    #section-4 input[type="text"], textarea {
+        width: 600px;
+        margin-bottom: 10px;
+        padding: 10px 0;
+    }
+}
